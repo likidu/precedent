@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider     = "mysql"
-  url          = env("TIDB_PRISMA_URL") // uses connection pooling
+  url          = env("DATABASE_URL") // uses connection pooling
   // Emulates relations in Prisma Client
   // https://www.prisma.io/docs/concepts/components/prisma-schema/relations/relation-mode#how-to-set-the-relation-mode-in-your-prisma-schema
   relationMode = "prisma"
