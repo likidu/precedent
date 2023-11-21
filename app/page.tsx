@@ -1,10 +1,10 @@
 import Card from "@/components/home/card";
-import { DEPLOY_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
-import Image from "next/image";
+import WebVitals from "@/components/home/web-vitals";
+import { Github, Twitter } from "@/components/shared/icons";
+import { DEPLOY_URL } from "@/lib/constants";
 import { nFormatter } from "@/lib/utils";
+import Image from "next/image";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -143,11 +143,12 @@ const features = [
   {
     title: "Built-in Auth + Database",
     description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
+      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/) + [TiDB Serverless](https://tidbcloud.com)",
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
         <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
+        <Image alt="TiDB logo" src="/tidb.svg" width={50} height={50} />
       </div>
     ),
   },
