@@ -1,6 +1,6 @@
 <a href="https://precedent.dev">
   <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/opengraph-image" />
-  <h1 align="center">Precedent</h1>
+  <h1 align="center">Precedent with TiDB Serverless</h1>
 </a>
 
 <p align="center">
@@ -26,7 +26,9 @@
 
 ## Introduction
 
-Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
+Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project created by [@steventey](https://twitter.com/steventey).
+
+This is the fork to demonstrate how to use [TiDB Serverless](https://tidbcloud.com) with Next.js.
 
 ## One-click Deploy
 
